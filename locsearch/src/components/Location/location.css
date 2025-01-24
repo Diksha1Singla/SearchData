@@ -1,0 +1,161 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  overscroll-behavior-x:contain;
+}
+.LocBG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url("../../images/BGLOC.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+.LocBG h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 4rem;
+  color: rgb(77, 235, 185);
+}
+
+.searchLoc input{
+  font-size: 1.5rem;
+  height: 4.3rem;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.75rem 0.2rem rgb(73, 72, 72) ;
+  background-color: #eee;
+  margin: 0 1rem;
+  outline: none;
+  border: none;
+  padding-left: 3rem;
+}
+
+input::placeholder{
+  color: rgba(85, 84, 84, 0.882);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.searchbox button{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0cap;
+}
+.searchbox button:hover{
+  cursor: pointer;
+}
+
+.Card{
+  width: 30rem;
+  background-color: rgb(218, 208, 208);
+  border: none;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: rgb(150, 144, 144) 0.25rem 0.25rem 0.5rem;
+}
+
+.innercard{
+  padding: 2rem 0;
+}
+
+.SearchLocText h2{
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+.Congo {
+  font-size: 2rem;
+}
+h3{
+  padding: 0;
+  margin: 0;
+}
+#atag:hover{
+  font-size: 1.75rem;
+  color: blue;
+}
+
+.SearchdetRes{
+  font-family:monospace;
+  color: rgb(9, 74, 89);
+}
+
+.Searchdet{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.AvailData h3,#atagStyle{
+  margin-top: 5rem;
+  font-size: 3rem;
+  color: rgb(165, 205, 192);
+  font-weight: 500;
+}
+
+#atagStyle:hover{
+  color: rgba(127, 127, 225, 0.808);
+  font-size: 3.3rem;
+}
+
+.grid{
+  display: flex;
+}
+.AvailData{
+  padding:0 3rem;
+}
+
+.detailBox{
+  margin: 2rem;
+  padding: 2rem;
+  font-family:monospace;
+  color: rgb(9, 74, 89);
+  background-color: aliceblue;
+}
+.GridBox{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+}
+
+.BuildBox img{
+  width: 18rem;
+  height: 10rem;
+}
+.BuildBox img:hover{
+  cursor: pointer;
+}
+.BuildBox h2{
+  padding: 0;
+  justify-content: center;
+  color: rgb(9, 74, 89);
+}
+
+.BuildGridBox{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.BuildBox{
+  flex: calc(25%);
+  margin: 2rem;
+  padding: 2rem;
+  background-color:aliceblue;
+  height: 15rem;
+  display:inline;
+}
